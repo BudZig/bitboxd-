@@ -1,0 +1,33 @@
+.nav-cont {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0% 5% 0%;
+}
+
+.logo {
+    height: 7vh;
+}
+
+.my-list {
+    font-size: x-large;
+    color: white;
+}
+
+.reviewed {
+    font-size: x-large;
+    color: white
+}
+
+.search {
+    font-size: x-large;
+    color: white
+}
+
+.profile {
+    font-size: x-large;
+    color: white
+    
+}
