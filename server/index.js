@@ -2,7 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser  = require('body-parser');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 const User = require('./models/user');
+
 const app = express();
 const port= 3000;
 const uri = 'mongodb://localhost:27017';
@@ -17,6 +19,7 @@ mongoose.connect(uri, {
 });
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.post('/login', async (req, res) => {
     const {email, password} = req.body;
